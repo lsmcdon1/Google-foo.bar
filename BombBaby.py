@@ -6,7 +6,6 @@ def solution(x, y):
     elif x == y: 
         return "impossible" 
     
-    found = False
     iterations = 0
     
     while not found: 
@@ -30,4 +29,4 @@ one = solution('9', '2')
 two = solution('9', '1')
 
 
-'halt;'
+'halt' #attach debugger to prevent loop out
