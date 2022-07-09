@@ -46,9 +46,8 @@ def format(raw_results):
     for i in raw_results:
         denoms.append(i.denominator)
 
-    denominator = 0
-    for i in (range(len(denoms) - 1)):
-        denominator = np.lcm(denoms[i], denoms[i+1])
+    #this is the line that messed me up! 
+    denominator = np.lcm.reduce(denoms)
 
     numerators = []
     for i in raw_results:
